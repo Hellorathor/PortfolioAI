@@ -65,9 +65,6 @@ app.use("/api/portfolio", portfolioRoutes);
 
 app.use("/api/analytics", analyticsRoutes);
 
-console.log(process.env.CLOUDINARY_CLOUD_NAME);
-console.log(process.env.CLOUDINARY_API_KEY);
-console.log(process.env.CLOUDINARY_API_SECRET);
 
 const PORT = process.env.PORT ||5000
 app.listen(PORT,()=>console.log(`Server is running on port ${PORT}`));
