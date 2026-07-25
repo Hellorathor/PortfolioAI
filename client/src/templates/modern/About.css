@@ -1,0 +1,118 @@
+/* ===========================
+   About Section
+=========================== */
+
+.about {
+  padding: 100px 8%;
+  background: #ffffff;
+}
+
+.about .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #2563eb;
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 10px;
+}
+
+.about > .container > p {
+  max-width: 850px;
+  margin: 35px auto 50px;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #4b5563;
+}
+
+.about-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.about-info div {
+  background: #f8fafc;
+  border-radius: 15px;
+  padding: 30px 25px;
+  text-align: center;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+.about-info div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(37,99,235,.15);
+}
+
+.about-info strong {
+  display: block;
+  font-size: 1rem;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.about-info div {
+  font-size: 1rem;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 992px) {
+
+  .about {
+    padding: 80px 30px;
+  }
+
+  .about-info {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .about h2 {
+    font-size: 2.2rem;
+  }
+
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 768px) {
+
+  .about {
+    padding: 70px 20px;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .about > .container > p {
+    font-size: 1rem;
+  }
+
+  .about-info {
+    grid-template-columns: 1fr;
+  }
+
+}

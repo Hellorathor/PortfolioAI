@@ -1,0 +1,112 @@
+/* ==========================================
+   Skills Form
+========================================== */
+
+.skills-form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-title {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.form-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-textarea {
+  width: 100%;
+  min-height: 140px;
+
+  padding: 15px 18px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+
+  background: #fafafa;
+
+  font-size: 15px;
+  line-height: 1.6;
+
+  resize: vertical;
+
+  transition: all .25s ease;
+}
+
+.form-textarea::placeholder {
+  color: #9ca3af;
+}
+
+.form-textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, .12);
+}
+
+.form-helper {
+  color: #6b7280;
+  font-size: .9rem;
+  margin-top: -8px;
+}
+
+.primary-btn {
+  align-self: flex-end;
+
+  min-width: 180px;
+
+  border: none;
+  border-radius: 12px;
+
+  padding: 14px 24px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: .25s;
+}
+
+.primary-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.primary-btn:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+
+  .skills-form {
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  .form-title {
+    font-size: 1.35rem;
+  }
+
+  .primary-btn {
+    width: 100%;
+  }
+
+}

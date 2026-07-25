@@ -1,0 +1,118 @@
+.skills{
+    padding:80px 20px;
+    background:#fff;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.skills h2{
+    text-align:center;
+    font-size:2.3rem;
+    margin-bottom:15px;
+}
+
+.skills-text{
+    text-align:center;
+    color:#666;
+    max-width:650px;
+    margin:0 auto 50px;
+    line-height:1.7;
+}
+
+.skills-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:24px;
+}
+
+.skill-chip{
+    width:120px;
+    height:120px;
+
+    background:#fff;
+
+    border:1px solid #ececec;
+    border-radius:18px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    gap:16px;
+
+    transition:.3s;
+
+    cursor:pointer;
+}
+
+.skill-chip:hover{
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    border-color:#2563eb;
+}
+
+.skill-icon{
+    width:58px;
+    height:58px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:14px;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    font-size:30px;
+}
+
+.skill-icon svg{
+    width:30px;
+    height:30px;
+}
+
+.skill-name{
+    font-weight:600;
+    color:#333;
+    text-align:center;
+    font-size:.95rem;
+}
+
+.no-skills{
+    width:100%;
+    text-align:center;
+    padding:60px 20px;
+    color:#777;
+}
+
+.no-skills h3{
+    margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+.skill-chip{
+    width:105px;
+    height:105px;
+}
+
+.skill-icon{
+    width:52px;
+    height:52px;
+}
+
+.skill-icon svg{
+    width:26px;
+    height:26px;
+}
+
+}

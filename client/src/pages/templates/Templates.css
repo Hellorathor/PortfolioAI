@@ -1,0 +1,269 @@
+.templates-page {
+    min-height: 100vh;
+    padding: 40px;
+    background: #f8fafc;
+}
+
+.templates-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.templates-header h1 {
+    font-size: 2.4rem;
+    color: #111827;
+    margin-bottom: 12px;
+}
+
+.templates-header p {
+    color: #6b7280;
+    font-size: 1rem;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.templates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 30px;
+}
+
+.templates-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 2px solid #e5e7eb;
+    transition: 0.35s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+
+.templates-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 45px rgba(0,0,0,.12);
+}
+
+.templates-card.templates-card-active {
+    border-color: #2563eb;
+    box-shadow: 0 20px 45px rgba(37,99,235,.18);
+}
+
+.templates-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    background: #f3f4f6;
+}
+
+.templates-content {
+    padding: 25px;
+}
+
+.templates-content h2 {
+    margin-bottom: 12px;
+    color: #111827;
+    font-size: 1.4rem;
+}
+
+.templates-content p {
+    color: #6b7280;
+    line-height: 1.7;
+    min-height: 70px;
+    margin-bottom: 25px;
+}
+
+.templates-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:20px;
+}
+
+.templates-tags span{
+    background:#eff6ff;
+    color:#2563eb;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:.8rem;
+    font-weight:600;
+}
+
+.templates-select-btn,
+.templates-selected-btn {
+    width:100%;
+    border:none;
+    padding:14px;
+    border-radius:10px;
+    font-size:.95rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.templates-select-btn {
+    background:#2563eb;
+    color:#fff;
+}
+
+.templates-select-btn:hover:not(:disabled){
+    background:#1d4ed8;
+}
+
+.templates-select-btn:disabled{
+    opacity:.7;
+    cursor:not-allowed;
+}
+
+.templates-selected-btn{
+    background:#16a34a;
+    color:#fff;
+    cursor:default;
+}
+
+.templates-loading{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:70vh;
+    font-size:1.2rem;
+    color:#6b7280;
+}
+
+/* Preview */
+
+.templates-actions{
+    display:flex;
+    gap:12px;
+}
+
+.templates-actions button{
+    flex:1;
+}
+
+.templates-preview-btn{
+    border:none;
+    background:#f3f4f6;
+    color:#111827;
+    border-radius:10px;
+    padding:14px;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.templates-preview-btn:hover{
+    background:#e5e7eb;
+}
+
+.templates-preview-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    padding:20px;
+}
+
+.templates-preview-modal{
+    background:#fff;
+    width:100%;
+    max-width:1000px;
+    border-radius:20px;
+    overflow:hidden;
+    position:relative;
+    animation:templatesPreviewShow .3s ease;
+}
+
+.templates-preview-modal img{
+    width:100%;
+    max-height:500px;
+    object-fit:cover;
+}
+
+.templates-preview-content{
+    padding:30px;
+}
+
+.templates-preview-content h2{
+    margin-bottom:15px;
+    color:#111827;
+}
+
+.templates-preview-content p{
+    color:#6b7280;
+    margin-bottom:20px;
+    line-height:1.7;
+}
+
+.templates-close-preview{
+    position:absolute;
+    top:15px;
+    right:15px;
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:#fff;
+    cursor:pointer;
+    font-size:18px;
+}
+
+@keyframes templatesPreviewShow{
+
+    from{
+        opacity:0;
+        transform:scale(.9);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .templates-actions{
+        flex-direction:column;
+    }
+
+    .templates-preview-content{
+        padding:20px;
+    }
+
+    .templates-preview-modal img{
+        max-height:250px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .templates-page{
+        padding:20px;
+    }
+
+    .templates-header h1{
+        font-size:2rem;
+    }
+
+    .templates-grid{
+        grid-template-columns:1fr;
+    }
+
+    .templates-card img{
+        height:200px;
+    }
+
+    .templates-content{
+        padding:20px;
+    }
+
+}

@@ -1,0 +1,232 @@
+/* ===========================
+   PROFILE FORM UI
+=========================== */
+
+.profile-page {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.profile-page h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 30px;
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.profile-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 30px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(0,0,0,.08);
+}
+
+.profile-card h2 {
+    margin: 0 0 20px;
+    font-size: 1.4rem;
+    color: #111827;
+    border-bottom: 2px solid #f3f4f6;
+    padding-bottom: 12px;
+}
+
+/* ===========================
+   Labels
+=========================== */
+
+.profile-card label {
+    display: block;
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+/* ===========================
+   Inputs
+=========================== */
+
+.profile-card input,
+.profile-card textarea,
+.profile-card select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    outline: none;
+    font-size: 15px;
+    transition: .25s;
+    box-sizing: border-box;
+    margin-bottom: 14px;
+    background: #fff;
+}
+
+.profile-card textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.profile-card input:focus,
+.profile-card textarea:focus,
+.profile-card select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37,99,235,.15);
+}
+
+/* ===========================
+   Small Text
+=========================== */
+
+.profile-card small {
+    display: block;
+    color: #6b7280;
+    margin-top: -6px;
+    margin-bottom: 15px;
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.profile-card button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: .25s;
+    margin-right: 10px;
+}
+
+/* Save Button */
+
+.profile-card button[type="submit"] {
+    background: #2563eb;
+    color: white;
+}
+
+.profile-card button[type="submit"]:hover {
+    background: #1d4ed8;
+}
+
+/* Add Button */
+
+.profile-card button[type="button"] {
+    background: #10b981;
+    color: white;
+}
+
+.profile-card button[type="button"]:hover {
+    background: #059669;
+}
+
+/* Disabled */
+
+.profile-card button:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+/* ===========================
+   Experience / Education /
+   Certificate Item
+=========================== */
+
+.experience-item,
+.education-item {
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 22px;
+    background: #fafafa;
+}
+
+.experience-item:hover,
+.education-item:hover {
+    background: #fff;
+}
+
+.experience-item button,
+.education-item button {
+    background: #ef4444 !important;
+    color: white;
+}
+
+.experience-item button:hover,
+.education-item button:hover {
+    background: #dc2626 !important;
+}
+
+/* Certificate */
+
+.profile-card > div {
+    border-radius: 12px;
+}
+
+/* ===========================
+   Checkbox
+=========================== */
+
+.profile-card input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* ===========================
+   Two Column Layout
+=========================== */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.form-grid-full {
+    grid-column: 1 / -1;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width:768px){
+
+    .profile-page{
+        padding:15px;
+    }
+
+    .profile-card{
+        padding:20px;
+    }
+
+    .form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .profile-card h2{
+        font-size:1.2rem;
+    }
+
+    .profile-page h1{
+        font-size:1.6rem;
+    }
+
+    .profile-card button{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+}

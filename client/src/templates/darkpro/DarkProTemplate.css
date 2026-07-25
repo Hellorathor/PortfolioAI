@@ -1,0 +1,183 @@
+:root {
+
+    --bg: #020617;
+
+    --surface: #0F172A;
+
+    --card: #111827;
+
+    --primary: #3B82F6;
+
+    --primary-hover: #2563EB;
+
+    --text: #F8FAFC;
+
+    --muted: #94A3B8;
+
+    --border: rgba(255,255,255,.08);
+
+    --radius: 18px;
+
+    --shadow: 0 15px 50px rgba(0,0,0,.45);
+
+    --transition: .35s ease;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Inter,sans-serif;
+}
+
+.darkpro{
+
+    min-height:100vh;
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+}
+
+.darkpro-container{
+
+    width:min(1280px,92%);
+
+    margin:auto;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+/* Background Glow */
+
+.darkpro::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:600px;
+
+    height:600px;
+
+    top:-220px;
+
+    right:-150px;
+
+    background:#2563eb30;
+
+    filter:blur(160px);
+
+    pointer-events:none;
+
+}
+
+.darkpro::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:450px;
+
+    height:450px;
+
+    bottom:-150px;
+
+    left:-120px;
+
+    background:#7c3aed20;
+
+    filter:blur(150px);
+
+    pointer-events:none;
+
+}
+
+/* Common Section */
+
+.dark-section{
+
+    padding:90px 0;
+
+}
+
+.section-title{
+
+    font-size:2.4rem;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+.section-subtitle{
+
+    color:var(--muted);
+
+    margin-bottom:55px;
+
+    max-width:650px;
+
+    line-height:1.8;
+
+}
+
+.dark-card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+@media(max-width:992px){
+
+.dark-section{
+
+padding:70px 0;
+
+}
+
+.section-title{
+
+font-size:2rem;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.darkpro-container{
+
+width:94%;
+
+}
+
+.section-title{
+
+font-size:1.8rem;
+
+}
+
+}

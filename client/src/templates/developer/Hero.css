@@ -1,0 +1,171 @@
+.dev-hero{
+    min-height:100vh;
+    background:#0d1117;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    font-family:Consolas,Monaco,monospace;
+}
+
+.dev-window{
+    width:100%;
+    max-width:1300px;
+    background:#161b22;
+    border:1px solid #30363d;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,.5);
+}
+
+.dev-titlebar{
+    height:48px;
+    background:#21262d;
+    display:flex;
+    align-items:center;
+    padding:0 20px;
+    justify-content:space-between;
+}
+
+.dev-dots{
+    display:flex;
+    gap:10px;
+}
+
+.dev-dots span{
+    width:13px;
+    height:13px;
+    border-radius:50%;
+}
+
+.red{
+    background:#ff5f56;
+}
+
+.yellow{
+    background:#ffbd2e;
+}
+
+.green{
+    background:#27c93f;
+}
+
+.dev-filename{
+    color:#c9d1d9;
+    font-size:.95rem;
+}
+
+.dev-body{
+    display:grid;
+    grid-template-columns:240px 1fr;
+    min-height:650px;
+}
+
+.dev-sidebar{
+    background:#0d1117;
+    border-right:1px solid #30363d;
+    padding:25px;
+}
+
+.dev-sidebar h4{
+    color:#8b949e;
+    margin-bottom:20px;
+    font-size:.85rem;
+}
+
+.dev-sidebar ul{
+    list-style:none;
+}
+
+.dev-sidebar li{
+    color:#c9d1d9;
+    margin-bottom:14px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.dev-sidebar li:hover,
+.dev-sidebar .active{
+    color:#58a6ff;
+}
+
+.dev-editor{
+    padding:40px;
+}
+
+.dev-editor pre{
+    color:#c9d1d9;
+    font-size:1rem;
+    line-height:2;
+    overflow-x:auto;
+}
+
+.keyword{
+    color:#ff7b72;
+}
+
+.variable{
+    color:#79c0ff;
+}
+
+.property{
+    color:#d2a8ff;
+}
+
+.string{
+    color:#a5d6ff;
+}
+
+.dev-terminal{
+    margin-top:40px;
+    background:#010409;
+    border:1px solid #30363d;
+    border-radius:10px;
+    padding:20px;
+}
+
+.dev-terminal p{
+    color:#c9d1d9;
+    margin-bottom:12px;
+}
+
+.dev-terminal span{
+    color:#58a6ff;
+}
+
+.terminal-output{
+    color:#3fb950 !important;
+}
+
+@media(max-width:900px){
+
+.dev-body{
+    grid-template-columns:1fr;
+}
+
+.dev-sidebar{
+    border-right:none;
+    border-bottom:1px solid #30363d;
+}
+
+.dev-editor{
+    padding:25px;
+}
+
+}
+
+@media(max-width:600px){
+
+.dev-editor pre{
+    font-size:.82rem;
+}
+
+.dev-titlebar{
+    padding:0 15px;
+}
+
+.dev-sidebar{
+    padding:20px;
+}
+
+}

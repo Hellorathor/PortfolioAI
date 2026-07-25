@@ -1,0 +1,29 @@
+.topbar {
+  height: 70px;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.topbar-title {
+  margin-left: 30px;
+  font-size: 22px;
+  font-weight: 700;
+  color:hwb(238 26% 4% / 0.862);
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+}
