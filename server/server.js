@@ -29,11 +29,8 @@ import cloudinary from "./config/cloudinary.js";
       "https://res.cloudinary.com/demo/image/upload/sample.jpg"
     );
 
-    console.log("Cloudinary Test Success");
-    console.log(result.secure_url);
   } catch (err) {
-    console.log("Cloudinary Test Failed");
-    console.log(err);
+  
   }
 })();
 //midleware 
