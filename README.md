@@ -153,8 +153,3 @@ https://www.linkedin.com/in/kumarranjit1432/
 Email:
 (hallorkp88@gmail.com)
 
----
-
-# ⭐ Support
-
-If you like this project, please give it a ⭐ on GitHub.
